@@ -2,15 +2,14 @@ package user
 
 import (
 	"context"
+	"log"
+	"os"
 	"server/util"
 	"strconv"
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-)
-
-const (
-	secretKey = "secret"
+	"github.com/joho/godotenv"
 )
 
 type service struct {
@@ -61,6 +60,13 @@ type MyJWTClaims struct {
 }
 
 func (s *service) Login(c context.Context, req *LoginUserReq) (*LoginUserRes, error) {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
+	secretKey := os.Getenv("SECRET_KEY")
+
 	ctx, cancel := context.WithTimeout(c, s.timeout)
 	defer cancel()
 
