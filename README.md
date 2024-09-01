@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project is a full-stack web application that uses Golang on the backend for WebSocket communication and Next.js with Tailwind CSS and TypeScript on the frontend. The backend is designed to handle real-time communication via WebSockets, while the frontend provides a modern, responsive user interface.
+This is the project in golang  that is designed to handle real-time communication via WebSockets.
 
 ## Project Structure
 
@@ -41,7 +41,7 @@ The project structured as follows:
 
 #### How to Run The Project
 
-To start the backend server, navigate to the `cmd/` directory and run:
+To start the server, navigate to the `cmd/` directory and run:
 
 ```bash
 go run main.go
