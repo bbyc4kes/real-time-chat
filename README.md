@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0695d85f-e5af-4343-9d13-3e5610422a23)# Real-time Chat - Golang w/ Gin, Gorilla & TypeScript w/ Next.js
+# Real-time Chat - Golang w/ Gin, Gorilla & TypeScript w/ Next.js
 
 ![Go](https://img.shields.io/badge/Go-1.23-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2-blue.svg)
