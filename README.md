@@ -1,9 +1,6 @@
-# Real-time Chat - Golang w/ Gin, Gorilla & TypeScript w/ Next.js
+# Real-time Chat - Golang w/ Gin, Gorilla 
 
 ![Go](https://img.shields.io/badge/Go-1.23-blue.svg)
-![Next.js](https://img.shields.io/badge/Next.js-14.2-blue.svg)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.10-green.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.5.4-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
@@ -13,12 +10,11 @@ This project is a full-stack web application that uses Golang on the backend for
 
 ## Project Structure
 
-### Server (`server/`)
+### Server
 
-The backend of the project is a Golang server structured as follows:
+The project structured as follows:
 
 ```
-server/
 ├── cmd/
 │   └── main.go                 # Main entry point for the server
 ├── db/
@@ -43,9 +39,9 @@ server/
 └── go.sum                      # Go dependencies checksum
 ```
 
-#### How to Run the Backend
+#### How to Run The Project
 
-To start the backend server, navigate to the `server/cmd/` directory and run:
+To start the backend server, navigate to the `cmd/` directory and run:
 
 ```bash
 go run main.go
@@ -54,49 +50,6 @@ go run main.go
 Backend server runs on `http://localhost:8080/`.
 
 Ensure your `.env` file is properly configured with the necessary environment variables.
-
-### Client (`client/`)
-
-The frontend of the project is built with Next.js, using the pages router:
-
-```
-client/
-├── modules/                    # Modules directory
-├── constants/                  # Constants directory
-├── components/                 # Components directory
-├── pages/                      # Next.js pages routing
-│   ├── index.tsx               # Main entry point
-│   └── ...                     # Other pages and components
-├── public/                     # Static files
-├── styles/                     # Global styles, including TailwindCSS
-├── tsconfig.json               # TypeScript configuration
-├── tailwind.config..ts               # Tailwind configuration
-└── package.json                # NPM package configuration
-```
-
-#### How to Run the Frontend
-
-Navigate to the `client/` directory and install dependencies:
-
-```bash
-npm install
-```
-or
-```bash
-pnpm install
-```
-
-To start the development server:
-
-```bash
-npm run dev
-```
-or
-```bash
-pnpm dev
-```
-
-This will start the Next.js application, typically running at `http://localhost:3000`.
 
 ## Hub architecture
 
@@ -107,22 +60,18 @@ Each client has a `writeMessage` and a `readMessage` methods. The `readMessage` 
 ## Key Features
 
 - **Golang WebSocket Server:** Real-time communication support using WebSockets.
-- **Next.js Frontend:** Modern, SSR-capable frontend with pages router.
-- **Tailwind CSS:** For rapid UI development with utility-first CSS.
-- **TypeScript:** Type-safe codebase on both client and server.
 
 ## Environment Setup
 
-1. **Backend:** Ensure Go is installed and set up on your system. Set up environment variables in the `.env` file based on `.env.example`.
-2. **Frontend:** Ensure Node.js and npm are installed. Configure environment variables in `.env.local` based on `.env.example`.
+Ensure Go is installed and set up on your system. Set up environment variables in the `.env` file based on `.env.example`.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repo and create your branch from `main`.
-2. If you've added code that should be tested, add tests.
-3. Ensure the code passes linting with `golangci-lint` and `eslint`.
+2. Follow naming as **docs: removed spaces**/**feat: establish websocket connection**/**fix: client connection error*** in imperative mood. 
+3. If you've added code that should be tested, add tests.
 4. Submit a pull request!
 
 ## License
@@ -132,9 +81,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 - [Golang](https://golang.org/)
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
 
 ---
 
